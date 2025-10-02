@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welkom!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>MrBeast6000</h1>
+  <h2>Welkom op mijn fan-site!</h2>
+
+  <p><img id="mrbeast-afbeelding" src="img/artworks-OBeGEXCNCkeqBi1M-vnWnUA-t500x500.jpg" alt="dit is MrBeast"></p>
+
+  <p id="mrbeast-paragraaf">
+      Mij <strong>favoriete</strong> youtuber
+  </p>
+
+  <div class="link-container">
+    <a href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA" class="youtube-link" target="_blank" rel="noopener noreferrer"> 
+      MrBeast YouTube kanaal
+    </a>
+    <a href="mailto:herohirdes@gmail.com" id="contactinformatie" class="email-link">
+      Stuur mij een e-mail
+    </a>
+    <a href="fotos.html">Foto’s van MrBeast</a>
+    </a>
+  </div>
+
+  <p>MrBeast is een youtuber die geld geeft en rare dingen doet. Ik vind hem leuk want hij doet grappige spellen en soms grote dingen. Ik kijk hem elke dag want het is leukk en vet. Soms maakt ie video’s met veel geld en ik wil dat ook hebben.</p>
+  <p>Donec quam felis, <em>ultricies</em> nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate.</p>
+
+  <script>
+    const titel = document.querySelector("h1");
+
+    titel.addEventListener("click", () => {
+      let tijd = new Date().getHours();
+       if (tijd < 12) {
+      titel.innerHTML = "Goedemorgen, MrBeast fan!";
+      titel.style.color = "yellow";
+    } else if (tijd < 18) {
+      titel.innerHTML = "Goedemiddag, MrBeast fan!";
+      titel.style.color = "yellow";
+    } else {
+      titel.innerHTML = "Goedenavond, MrBeast fan!";
+      titel.style.color = "yellow";
+    }
+    });
+  </script>
+</body>
+</html>
